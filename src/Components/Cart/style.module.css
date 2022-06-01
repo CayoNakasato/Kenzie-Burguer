@@ -1,0 +1,153 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 18rem;
+
+    border-radius: 10px 10px 0 0;
+
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+
+.headerContainer{
+    width: 18rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 10px;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    border-radius: 10px 10px 0 0;
+
+    color: #fff;
+    background-color: #27AE60;
+}
+
+.list{
+    background-color: #F5F5F5;
+}
+
+@media (min-width:375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 20rem;
+    
+        border-radius: 10px 10px 0 0;
+    
+        margin: 0 auto;
+    
+        background-color: #fff;
+    }
+
+    .headerContainer{
+        width: 20rem;
+        height: 3rem;
+    
+        display: flex;
+        align-items: center;
+    
+        padding-left: 10px;
+    
+        font-size: 1.5rem;
+        font-weight: 700;
+    
+        border-radius: 10px 10px 0 0;
+    
+        color: #fff;
+        background-color: #27AE60;
+    }
+}
+
+@media (min-width:425px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 25rem;
+    
+        border-radius: 10px 10px 0 0;
+    
+        margin: 0 auto;
+    
+        background-color: #fff;
+    }
+
+    .headerContainer{
+        width: 25rem;
+        height: 3rem;
+    
+        display: flex;
+        align-items: center;
+    
+        padding-left: 10px;
+    
+        font-size: 1.5rem;
+        font-weight: 700;
+    
+        border-radius: 10px 10px 0 0;
+    
+        color: #fff;
+        background-color: #27AE60;
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 45rem;
+    
+        border-radius: 10px 10px 0 0;
+    
+        margin: 0 auto;
+    
+        background-color: #fff;
+    }
+
+    .headerContainer{
+        width: 45rem;
+        height: 3rem;
+    
+        display: flex;
+        align-items: center;
+    
+        padding-left: 10px;
+    
+        font-size: 1.5rem;
+        font-weight: 700;
+    
+        border-radius: 10px 10px 0 0;
+    
+        color: #fff;
+        background-color: #27AE60;
+    }
+}
+
+@media (min-width: 1040px) {
+    .container{
+        width: 30rem;
+        max-height: 40rem ;
+    }
+    .headerContainer{
+        width: 45rem;
+        height: 5rem;
+    }
+    .list{
+        max-height: 30rem;
+        overflow-y: scroll;
+    }
+    
+}
