@@ -10,15 +10,13 @@ function App() {
   const [filteredProducts, setFilteredProducts] = useState("");
   const [currentSale, setCurrentSale] = useState([]);
 
-  const clearCart = () =>{
-    const clearList = []
-    setCurrentSale(clearList)
-  }
+  const clearCart = () => {
+    const clearList = [];
+    setCurrentSale(clearList);
+  };
 
   const handleClick = (productId) => {
-    const alreadyHaveProduct = currentSale.filter(
-      (product) => product.id === productId
-    );
+    const alreadyHaveProduct = currentSale.filter((product) => product.id === productId);
     if (alreadyHaveProduct.length === 1) {
       return toast.error("Produto já esta no carrinho!");
     } else {
@@ -28,9 +26,7 @@ function App() {
   };
 
   const removeItem = (productName) => {
-    const newList = currentSale.filter(
-      (product) => product.name !== productName
-    );
+    const newList = currentSale.filter((product) => product.name !== productName);
     setCurrentSale(newList);
   };
 
@@ -40,7 +36,7 @@ function App() {
       .then((res) => {
         setProducts(res.data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => toast.error(err));
   }, []);
 
   return (
@@ -72,8 +68,11 @@ function App() {
           handleClick={handleClick}
           filteredProducts={filteredProducts}
         />
-        <Cart currentSale={currentSale} removeItem={removeItem} clearCart={clearCart} />
-
+        <Cart
+          currentSale={currentSale}
+          removeItem={removeItem}
+          clearCart={clearCart}
+        />
       </div>
     </div>
   );

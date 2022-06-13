@@ -1,4 +1,5 @@
 import style from "./style.module.css"
+
 function Product({produto, handleClick}){
     return(
         <div className={style.container}>
